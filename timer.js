@@ -4,8 +4,19 @@
 
 const timer = function(userInput) {
   userInput =  process.argv.slice(2);
+  
+  //  const testMap = userInput.map((item) => {
+  //     return item * 2
+  //   });
+  //
+  // const testPars =
+  // console.log (testPars);
+
+
+  // console.log(testMap);
   //console.log(userInput)
-  if (userInput < 1) { // couldn't figure out how to limit by string and NaN
+  // change array into int with parsInt and map
+  if (userInput < 1 || isNaN(parseInt(userInput))) { // couldn't figure out how to limit by string and NaN
     return "nope";
   
   } else {
@@ -23,8 +34,8 @@ const timer = function(userInput) {
 console.log(timer());
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof 
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
   
 // I feel like I'm searching for the wrong thing
 
