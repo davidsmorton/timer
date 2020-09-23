@@ -5,12 +5,12 @@
 const timer = function(userInput) {
   userInput =  process.argv.slice(2);
   //console.log(userInput)
-  if (userInput < 1 ) {
+  if (userInput < 1) {
     return "nope";
   } else if ("string") { // is there a better way?
-    return "not going to work"
+    return "not going to work";
   } else if (NaN) {
-    return "try again"
+    return "try again";
   } else {
     for (let value of userInput)  {
 
