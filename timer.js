@@ -5,12 +5,9 @@
 const timer = function(userInput) {
   userInput =  process.argv.slice(2);
   //console.log(userInput)
-  if (userInput < 1) {
+  if (userInput < 1) { // couldn't figure out how to limit by string and NaN
     return "nope";
-  } else if ("string") { // is there a better way?
-    return "not going to work";
-  } else if (NaN) {
-    return "try again";
+  
   } else {
     for (let value of userInput)  {
 
@@ -25,21 +22,9 @@ const timer = function(userInput) {
 };
 console.log(timer());
 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN 
+  
+// I feel like I'm searching for the wrong thing
 
-  
-  
-  
-//|| userInput < 1 || userInput === NaN
-  
-// let timInt = 0
-// process.stdout.write("\n");
-// for(let i = 0; i < sentence.length; i++) {
-//   setTimeout(() => {
-//       process.stdout.write(sentence[i] );
-//       }, timInt);
-//   timInt += 50
-// };
-
-// setTimeout(() => {
-//   process.stdout.write("\n")
-// }, timInt);
